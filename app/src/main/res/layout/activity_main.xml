@@ -60,7 +60,7 @@
                     android:padding="4sp"
                     android:selectAllOnFocus="true"
                     android:imeOptions="actionDone"
-                    android:inputType="textPassword|numberPassword|textWebPassword"/>
+                    android:inputType="textPassword|textWebPassword"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
