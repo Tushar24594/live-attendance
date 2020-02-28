@@ -17,7 +17,9 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:padding="10sp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider">
             <TextView
                 android:id="@+id/signInText"
                 android:layout_width="wrap_content"
@@ -29,18 +31,97 @@
                 android:layout_height="wrap_content"
                 android:padding="10sp"
                 android:background="@drawable/bordershadow"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:divider="@drawable/empty_tall_divider">
                 <TextView
                     android:id="@+id/userNameText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="UserName or email"/>
-                <AutoCompleteTextView
+                <EditText
+                    android:id="@+id/emailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint=""
-                    android:layout_marginTop="5sp"
+                    android:selectAllOnFocus="true"
+                    android:inputType="textEmailAddress|textPersonName"
                     android:padding="4sp"
+                    android:background="@drawable/bordershadow"/>
+                <TextView
+                    android:id="@+id/passwordText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordershadow"
+                    android:padding="4sp"
+                    android:selectAllOnFocus="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword|numberPassword|textWebPassword"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:background="@drawable/buttonbackground"
+                    android:text="Sign In"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/registerNowText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registerNow"/>
+            <LinearLayout
+                android:id="@+id/child2LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordershadow"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:divider="@drawable/empty_tall_divider"
+                android:padding="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with"/>
+                <TextView
+                    android:id="@+id/googleSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google"
+                    android:padding="10sp"
+                    android:drawablePadding="10sp"
+                    android:drawableLeft="@drawable/googleg_standard_color_18"
+                    android:background="@drawable/bordershadow"/>
+                <TextView
+                    android:id="@+id/facebookSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:padding="10sp"
+                    android:drawablePadding="10sp"
+                    android:drawableLeft="@drawable/googleg_standard_color_18"
+                    android:background="@drawable/bordershadow"/>
+                <TextView
+                    android:id="@+id/twitterSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:padding="10sp"
+                    android:drawablePadding="10sp"
+                    android:drawableLeft="@drawable/googleg_standard_color_18"
+                    android:background="@drawable/bordershadow"/>
+                <TextView
+                    android:id="@+id/githubSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Github"
+                    android:padding="10sp"
+                    android:drawablePadding="10sp"
+                    android:drawableLeft="@drawable/googleg_standard_color_18"
                     android:background="@drawable/bordershadow"/>
             </LinearLayout>
         </LinearLayout>
