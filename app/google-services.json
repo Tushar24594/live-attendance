@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "56651117471",
+    "firebase_url": "https://live-attendance-f5b08.firebaseio.com",
+    "project_id": "live-attendance-f5b08",
+    "storage_bucket": "live-attendance-f5b08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56651117471:android:8042ec3d48cfee17c943aa",
+        "android_client_info": {
+          "package_name": "in.tushar.liveattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56651117471-49oc3rhl7jml0emobfckmqpv3rcsrmo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.tushar.liveattendance",
+            "certificate_hash": "9b7d68a2b16e91d9ae81dddca8e36c14b9a1252e"
+          }
+        },
+        {
+          "client_id": "56651117471-47f01ka1lasrgdpltosjpv0n0nj1r88a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuTNscmwHFfgZz0goNl11Lv4goy2svr3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56651117471-47f01ka1lasrgdpltosjpv0n0nj1r88a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
