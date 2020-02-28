@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/parentLinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10sp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/signInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign-In" />
+            <LinearLayout
+                android:id="@+id/childLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:background="@drawable/bordershadow"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/userNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName or email"/>
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:layout_marginTop="5sp"
+                    android:padding="4sp"
+                    android:background="@drawable/bordershadow"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
