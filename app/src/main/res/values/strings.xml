@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Live Attendenc</string>
+    <string name="app_name">Live Attendance</string>
+    <string name="registerNow">Don\'t have an account yet? <font fgcolor='#FF00BCD4'>Register Now</font></string>
 </resources>

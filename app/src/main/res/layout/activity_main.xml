@@ -62,6 +62,7 @@
                     android:imeOptions="actionDone"
                     android:inputType="textPassword|textWebPassword"/>
                 <Button
+                    android:id="@+id/signInbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
