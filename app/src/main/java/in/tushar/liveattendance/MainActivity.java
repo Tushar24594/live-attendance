@@ -3,6 +3,7 @@ package in.tushar.liveattendance;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -60,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
                             signInbtn.setScaleX((float)1.0);
                             signInbtn.setScaleY((float)1.0);
                             Log.e(TAG,"Details : "+userEmail.getText().toString()+" : "+userPassword.getText().toString());
-                            createUser(userEmail.getText().toString().trim(),userPassword.getText().toString().trim());
+//                            createUser(userEmail.getText().toString().trim(),userPassword.getText().toString().trim());
+                            signInExistingUser(userEmail.getText().toString().trim(),userPassword.getText().toString().trim());
                         }
                     },250);
                 }
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
+                            Toast.makeText(MainActivity.this, "Authentication failed." + task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -115,5 +117,10 @@ public class MainActivity extends AppCompatActivity {
             String uid = user.getUid();
             Log.e(TAG,"User Details : "+name+userEmail+emailVerified+uid+photoUri);
         }
+    }
+    public void registerNow(View v){
+        Intent intent = new Intent(getApplicationContext(),registration.class);
+        startActivity(intent);
+        finish();
     }
 }

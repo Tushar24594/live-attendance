@@ -1,4 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY app_name "Live Attendance">
+    ]>
 <resources>
-    <string name="app_name">Live Attendance</string>
+    <string name="app_name">&app_name;</string>
     <string name="registerNow">Don\'t have an account yet? <font fgcolor='#FF00BCD4'>Register Now</font></string>
+    <string name="termsText">I accept the <font fgcolor='#FF00BCD4'>Terms of Service and Privacy Policy</font></string>
+    <string name="receiveUpdateText">I\'d like to receive updates via email about &app_name;</string>
 </resources>
